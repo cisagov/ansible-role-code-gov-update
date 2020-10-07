@@ -1,6 +1,6 @@
 # ansible-role-code-gov-update #
 
-[![Build Status](https://travis-ci.com/cisagov/ansible-role-code-gov-update.svg?branch=develop)](https://travis-ci.com/cisagov/ansible-role-code-gov-update)
+[![GitHub Build Status](https://github.com/cisagov/ansible-role-code-gov-update/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-code-gov-update/actions)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/cisagov/ansible-role-code-gov-update.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-code-gov-update/alerts/)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/cisagov/ansible-role-code-gov-update.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-code-gov-update/context:python)
 
