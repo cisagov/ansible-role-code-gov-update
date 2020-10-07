@@ -33,7 +33,7 @@ galaxy_info:
         - xenial
         - bionic
         - focal
-  role_name: docker
+  role_name: code_gov_update
 
 dependencies:
   - src: https://github.com/cisagov/ansible-role-docker
