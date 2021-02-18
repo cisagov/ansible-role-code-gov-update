@@ -1,12 +1,12 @@
 ---
 - name: Create the /var/cyhy/code-gov-update directory
-  file:
+  ansible.builtin.file:
     mode: 0755
     path: /var/cyhy/code-gov-update
     state: directory
 
 - name: Download and untar the code-gov-update tarball
-  unarchive:
+  ansible.builtin.unarchive:
     dest: /var/cyhy/code-gov-update
     extra_opts:
       - "--strip-components=1"
