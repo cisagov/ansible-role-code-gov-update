@@ -1,5 +1,7 @@
 ---
 - name: Converge
   hosts: all
-  roles:
-    - role: ansible-role-code-gov-update
+  tasks:
+    - name: Include ansible-role-code-gov-update
+      ansible.builtin.include_role:
+        name: ansible-role-code-gov-update
