@@ -1,0 +1,30 @@
+---
+version: "3.2"
+
+secrets:
+  aws_config:
+    file: secrets/aws_config
+  scraper_config:
+    file: secrets/scraper.json
+
+services:
+  update:
+    command:
+      - "--from=code@cyber.dhs.gov"
+      - "--to=webpublishing@hq.dhs.gov"
+      - "--cc=ncats-dev@beta.dhs.gov"
+      - "--reply=ncats-dev@beta.dhs.gov"
+      - "--json=code.json"
+      - "--subject=\"Latest code.gov JSON file\""
+      - "--text=body.txt"
+      - "--html=body.html"
+      - "--log-level=info"
+    environment:
+      - AWS_CONFIG_FILE=/run/secrets/aws_config
+      - AWS_PROFILE=default
+    image: dhsncats/code-gov-update:0.0.2
+    secrets:
+      - source: aws_config
+        target: aws_config
+      - source: scraper_config
+        target: scraper_config.json
