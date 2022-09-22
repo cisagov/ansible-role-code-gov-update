@@ -10,15 +10,15 @@ secrets:
 services:
   update:
     command:
-      - "--from=code@cyber.dhs.gov"
-      - "--to=webpublishing@hq.dhs.gov"
       - "--cc=ncats-dev@beta.dhs.gov"
-      - "--reply=ncats-dev@beta.dhs.gov"
+      - "--from=code@cyber.dhs.gov"
+      - "--html=body.html"
       - "--json=code.json"
+      - "--log-level=info"
+      - "--reply=ncats-dev@beta.dhs.gov"
       - "--subject=\"Latest code.gov JSON file\""
       - "--text=body.txt"
-      - "--html=body.html"
-      - "--log-level=info"
+      - "--to=webpublishing@hq.dhs.gov"
     environment:
       - AWS_CONFIG_FILE=/run/secrets/aws_config
       - AWS_PROFILE=default
