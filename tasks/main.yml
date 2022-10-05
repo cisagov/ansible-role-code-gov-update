@@ -5,10 +5,8 @@
     path: /var/cyhy/code-gov-update
     state: directory
 
-- name: Download and untar the code-gov-update tarball
-  ansible.builtin.unarchive:
+- name: Install the Docker Compose configuration
+  ansible.builtin.copy:
     dest: /var/cyhy/code-gov-update
-    extra_opts:
-      - "--strip-components=1"
-    remote_src: yes
-    src: https://api.github.com/repos/cisagov/code-gov-update/tarball/develop
+    mode: 0644
+    src: docker-compose.yml
