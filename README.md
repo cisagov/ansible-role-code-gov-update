@@ -1,8 +1,7 @@
 # ansible-role-code-gov-update #
 
 [![GitHub Build Status](https://github.com/cisagov/ansible-role-code-gov-update/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-code-gov-update/actions)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/cisagov/ansible-role-code-gov-update.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-code-gov-update/alerts/)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/cisagov/ansible-role-code-gov-update.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-code-gov-update/context:python)
+[![CodeQL](https://github.com/cisagov/ansible-role-code-gov-update/workflows/CodeQL/badge.svg)](https://github.com/cisagov/ansible-role-code-gov-update/actions/workflows/codeql-analysis.yml)
 
 An Ansible role for installing
 [cisagov/code-gov-update](https://github.com/cisagov/code-gov-update).
@@ -34,8 +33,10 @@ Here's how to use it in a playbook:
 - hosts: docker
   become: yes
   become_method: sudo
-  roles:
-    - code_gov_update
+  tasks:
+    - name: Install the code-gov-update composition
+      ansible.builtin.include_role:
+        name: code_gov_update
 ```
 
 ## Contributing ##
