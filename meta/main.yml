@@ -1,8 +1,11 @@
 ---
+dependencies:
+  - src: https://github.com/cisagov/ansible-role-docker
+    name: docker
 galaxy_info:
   author: Shane Frasier
-  description: Ansible role for installing cisagov/code-gov-update
   company: CISA Cyber Assessments
+  description: Ansible role for installing cisagov/code-gov-update
   galaxy_tags: []
   license: CC0
   # With the release of version 2.10, Ansible finally correctly
@@ -28,7 +31,6 @@ galaxy_info:
         - bookworm
     - name: Fedora
       versions:
-        - "35"
         - "36"
         - "37"
     - name: Ubuntu
@@ -37,7 +39,3 @@ galaxy_info:
         - focal
         - jammy
   role_name: code_gov_update
-
-dependencies:
-  - src: https://github.com/cisagov/ansible-role-docker
-    name: docker
