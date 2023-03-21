@@ -22,7 +22,7 @@ services:
     environment:
       - AWS_CONFIG_FILE=/run/secrets/aws_config
       - AWS_PROFILE=default
-    image: dhsncats/code-gov-update:0.0.2
+    image: cisagov/code-gov-update:0.1.0
     secrets:
       - source: aws_config
         target: aws_config
