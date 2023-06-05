@@ -1,12 +1,16 @@
 ---
 - name: Create the /var/cyhy/code-gov-update directory
   ansible.builtin.file:
+    group: "{{ file_owner_group | default(omit) }}"
     mode: 0755
+    owner: "{{ file_owner_username | default(omit) }}"
     path: /var/cyhy/code-gov-update
     state: directory
 
 - name: Install the Docker Compose configuration
   ansible.builtin.copy:
     dest: /var/cyhy/code-gov-update
+    group: "{{ file_owner_group | default(omit) }}"
     mode: 0644
+    owner: "{{ file_owner_username | default(omit) }}"
     src: docker-compose.yml
