@@ -10,12 +10,12 @@ secrets:
 services:
   update:
     command:
-      - "--cc=ncats-dev@beta.dhs.gov"
+      - "--cc=cisa-cyhy-mailer@gwe.cisa.dhs.gov"
       - "--from=code@cyber.dhs.gov"
       - "--html=body.html"
       - "--json=code.json"
       - "--log-level=info"
-      - "--reply=ncats-dev@beta.dhs.gov"
+      - "--reply=cisa-cyhy-mailer@gwe.cisa.dhs.gov"
       - "--subject=\"Latest code.gov JSON file\""
       - "--text=body.txt"
       - "--to=webpublishing@hq.dhs.gov"
