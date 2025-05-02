@@ -10,14 +10,22 @@ secrets:
 services:
   update:
     command:
+      # yamllint/ansible-lint complain about several of these lines
+      # being quoted, but we want to ensure that the @s are not
+      # interpreted as YAML special characters.
+      #
+      # yamllint disable-line rule:quoted-strings
       - "--cc=cisa-cyhy-mailer@gwe.cisa.dhs.gov"
+      # yamllint disable-line rule:quoted-strings
       - "--from=code@cyber.dhs.gov"
-      - "--html=body.html"
-      - "--json=code.json"
-      - "--log-level=info"
+      - --html=body.html
+      - --json=code.json
+      - --log-level=info
+      # yamllint disable-line rule:quoted-strings
       - "--reply=cisa-cyhy-mailer@gwe.cisa.dhs.gov"
-      - "--subject=\"Latest code.gov JSON file\""
-      - "--text=body.txt"
+      - --subject="Latest code.gov JSON file"
+      - --text=body.txt
+      # yamllint disable-line rule:quoted-strings
       - "--to=webpublishing@hq.dhs.gov"
     environment:
       - AWS_CONFIG_FILE=/run/secrets/aws_config
