@@ -1,6 +1,7 @@
 # ansible-role-code-gov-update #
 
 [![GitHub Build Status](https://github.com/cisagov/ansible-role-code-gov-update/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-code-gov-update/actions)
+[![License](https://img.shields.io/github/license/cisagov/ansible-role-code-gov-update)](https://spdx.org/licenses/)
 [![CodeQL](https://github.com/cisagov/ansible-role-code-gov-update/workflows/CodeQL/badge.svg)](https://github.com/cisagov/ansible-role-code-gov-update/actions/workflows/codeql-analysis.yml)
 
 An Ansible role for installing
