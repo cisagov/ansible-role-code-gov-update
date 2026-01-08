@@ -13,4 +13,4 @@
     group: "{{ code_gov_update_file_owner_group | default(omit) }}"
     mode: u=rw,g=r,o=r
     owner: "{{ code_gov_update_file_owner_username | default(omit) }}"
-    src: docker-compose.yml
+    src: compose.yml

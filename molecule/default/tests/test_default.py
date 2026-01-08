@@ -23,7 +23,7 @@ def test_packages(host, directory):
 
 
 @pytest.mark.parametrize(
-    "file", [{"path": "/var/cyhy/code-gov-update/docker-compose.yml", "mode": "0o644"}]
+    "file", [{"path": "/var/cyhy/code-gov-update/compose.yml", "mode": "0o644"}]
 )
 def test_files(host, file):
     """Test that appropriate files exist."""
