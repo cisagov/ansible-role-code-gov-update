@@ -4,8 +4,7 @@
 [![License](https://img.shields.io/github/license/cisagov/ansible-role-code-gov-update)](https://spdx.org/licenses/)
 [![CodeQL](https://github.com/cisagov/ansible-role-code-gov-update/workflows/CodeQL/badge.svg)](https://github.com/cisagov/ansible-role-code-gov-update/actions/workflows/codeql-analysis.yml)
 
-An Ansible role for installing
-[cisagov/code-gov-update](https://github.com/cisagov/code-gov-update).
+An Ansible role for installing [cisagov/code-gov-update].
 
 ## Requirements ##
 
@@ -15,7 +14,7 @@ None.
 
 | Variable | Description | Default | Required |
 |----------|-------------|---------|----------|
-| code_gov_update_docker_image_tag | The cisagov/code-gov-update Docker image tag to use in the Docker composition. | 0.3.0-rc.7 | No |
+| code_gov_update_docker_image_tag | The [cisagov/code-gov-update] Docker image tag to use in the Docker composition. | 0.3.0-rc.7 | No |
 | code_gov_update_file_owner_group | The name of the group that should own any files or directories created by this role. | [Omitted](https://docs.ansible.com/ansible/latest/user_guide/playbooks_filters.html#making-variables-optional) | No |
 | code_gov_update_file_owner_username | The name of the user that should own any files or directories created by this role. | [Omitted](https://docs.ansible.com/ansible/latest/user_guide/playbooks_filters.html#making-variables-optional) | No |
 
@@ -80,3 +79,5 @@ with this waiver of copyright interest.
 ## Author Information ##
 
 Shane Frasier - <jeremy.frasier@gwe.cisa.dhs.gov>
+
+[cisagov/code-gov-update]: https://github.com/cisagov/code-gov-update
