@@ -1,0 +1,3 @@
+---
+# The cisagov/code-gov-update Docker image tag to use in the Docker composition.
+code_gov_update_docker_image_tag: 0.3.0-rc.7

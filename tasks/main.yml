@@ -8,9 +8,9 @@
     state: directory
 
 - name: Install the Docker Compose configuration
-  ansible.builtin.copy:
-    dest: /var/cyhy/code-gov-update
+  ansible.builtin.template:
+    dest: /var/cyhy/code-gov-update/compose.yml
     group: "{{ code_gov_update_file_owner_group | default(omit) }}"
     mode: u=rw,g=r,o=r
     owner: "{{ code_gov_update_file_owner_username | default(omit) }}"
-    src: compose.yml
+    src: compose.yml.j2
