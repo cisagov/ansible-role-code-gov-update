@@ -30,7 +30,7 @@ services:
     environment:
       - AWS_CONFIG_FILE=/run/secrets/aws_config
       - AWS_PROFILE=default
-    image: cisagov/code-gov-update:0.3.0-rc.7
+    image: cisagov/code-gov-update:0.3.0-rc.9
     secrets:
       - source: aws_config
         target: aws_config
