@@ -45,5 +45,6 @@ galaxy_info:
       versions:
         - jammy
         - noble
+        - resolute
   role_name: code_gov_update
   standalone: true
